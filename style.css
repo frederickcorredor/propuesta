@@ -13,6 +13,11 @@ section{
     align-items: center;
     border: 2px solid red;
     overflow: hidden;
+    display: none;
+}
+
+.uno{
+    display: flex;
 }
 
 h1{
