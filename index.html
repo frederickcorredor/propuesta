@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="uno">
+        <section class="uno" id="uno">
             <div class="Titulo">
                 <h1>Hola</h1>
                 <p>
@@ -21,30 +21,31 @@
                 <form action="">
                     <label for="nombre">¿cómo te llamas?</label>
                     <input type="text" name="nombre" id="nombre" required>
-                    <input type="submit" value="Siguiente">
+                    
                 </form>
+                <button onclick="mostrardos()">Continuar</button>
             </div>
             <div class="modelo">
                 <img src="4278.jpg" alt="">
             </div>
         </section>
 
-        <section class="dos">
+        <section class="dos" id="dos">
             <div class="Titulo">
-                <h1>Hola "nombre"</h1>
+                <h1 id="resultado"></h1>
                 <p>
                     ¿Deseas saber que es lo mas importante
                     al momento de tener una noche de pasión?
                 </p>
-                <button onclick="opcionsi1">SI</button>
-                <button onclick="opcionno1" class="no">NO</button>
+                <button onclick="opcionsi1()">SI</button>
+                <button onclick="opcionno1()" class="no">NO</button>
             </div>
             <div class="modelo">
                 <img src="4278.jpg" alt="">
             </div>
         </section>
         
-        <section class="opcionsi1">
+        <section class="opcionsi1" id="opcionsi1">
             <div class="Titulo">
                 <h1>Claro que si!</h1>
                 <p>
@@ -57,14 +58,14 @@
                 <p>"nombre" de seguro eres todo un toro, ¿pero sabias que 
                     puedes mejorar aun mas?
                 </p>
-                <button onclick="siguiente1">Seguir</button>
+                <button onclick="siguiente1()">Seguir</button>
             </div>
             <div class="modelo">
                 <img src="4270.jpg" alt="">
             </div>
         </section>
 
-        <section class="opcionno1">
+        <section class="opcionno1" id="opcionno1">
             <div class="Titulo">
                 <h1>De seguro que ya lo sabes</h1>
                 <p>
@@ -77,33 +78,33 @@
                 <p>"nombre" de seguro eres todo un toro, ¿pero sabias que 
                     puedes mejorar aun mas?
                 </p>
-                <button onclick="siguiente1">Seguir</button>
+                <button onclick="siguiente1()">Seguir</button>
             </div>
             <div class="modelo">
                 <img src="4270.jpg" alt="">
             </div>
         </section>
 
-        <section class="seleccion">
+        <section class="seleccion" id="seleccion">
             <div class="Titulo">
                 <h1>Que te gustaria mejorar</h1>
                 
             </div>
             <div class="opciones">
-                <button>Aumentar tamaño</button>
-                <button>Durar mas tiempo</button>
-                <button>Erecciones fuertes y prolongadas</button>
+                <button onclick="producto1()">Aumentar tamaño</button>
+                <button onclick="producto2()">Durar mas tiempo</button>
+                <button onclick="producto3()">Erecciones fuertes y prolongadas</button>
             </div>
             <div class="formulario">
                 <p>Tambien puedo ayudarte en todas las anteriores</p>
-                <button onclick="siguiente1">Todas las anteriores</button>
+                <button onclick="producto4()">Todas las anteriores</button>
             </div>
             <div class="modelo">
                 <img src="4270.jpg" alt="">
             </div> 
         </section>
 
-        <section class="producto1">
+        <section class="producto1" id="producto1">
             <div class="Titulo">
                 <h1>El tamaño de tu herramienta 7 cm mas Grande</h1>
                 <p>
@@ -126,7 +127,7 @@
             </div>
         </section>
 
-        <section class="producto2">
+        <section class="producto2" id="producto2">
             <div class="Titulo">
                 <h1>Mas tiempo Mas placer</h1>
                 <p>
@@ -148,7 +149,7 @@
             </div>
         </section>
 
-        <section class="producto3">
+        <section class="producto3" id="producto3">
             <div class="Titulo">
                 <h1>A MAYOR ERECCIÓN MAYOR EL PLACER</h1>
                 <p>
@@ -170,7 +171,7 @@
             </div>
         </section>
 
-        <section class="producto4">
+        <section class="producto4" id="producto4">
             <div class="Titulo">
                 <h1>¡SERÁS UN TORO!</h1>
                 <p>
@@ -193,5 +194,7 @@
             </div>
         </section>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
